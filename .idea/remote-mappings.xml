@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@0c6baffe-9b20-4ede-bbdd-e703e28a553c" />
+        <remote-mappings server-id="python@sftp://yuchen@10.161.159.74:22/home/yuchen/miniconda3/envs/ldm/bin/python3.8">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/home/yuchen/code/text2image_safety" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>

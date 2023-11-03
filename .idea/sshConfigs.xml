@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="login.rockfish.jhu.edu" id="ef44d729-7394-4b7f-ac2e-4bd26140140e" port="22" nameFormat="DESCRIPTIVE" username="yyang179" useOpenSSHConfig="true" />
+      <sshConfig authType="PASSWORD" host="10.161.159.73" id="d08e571b-5f39-4bb5-bed4-f1271e799d3a" port="22" nameFormat="DESCRIPTIVE" username="haolin" useOpenSSHConfig="true" />
+      <sshConfig host="ec2-3-236-227-169.compute-1.amazonaws.com" id="43312440-a279-4094-9536-8d6f59830914" keyPath="$USER_HOME$/Downloads/YuchenKey.pem" port="22" nameFormat="DESCRIPTIVE" username="ec2-user" useOpenSSHConfig="true" />
+      <sshConfig host="ec2-3-236-173-71.compute-1.amazonaws.com" id="f7af245a-3afb-4863-aea5-74ab06fec132" keyPath="$USER_HOME$/Downloads/YuchenKey.pem" port="22" nameFormat="DESCRIPTIVE" username="ec2-user" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>
