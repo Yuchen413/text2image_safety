@@ -52,8 +52,6 @@ def main():
     target_prompt_list = load_data('data/nsfw_200.txt')
     results_df = pd.DataFrame(columns=["original_text","perturbed_text","local_queries","num_queries","result_type","similarity score"])
 
-    count_all = 0
-    count_pass = 0
     prompt_list, _ = get_dictionary(args.len_subword, args.en)
 
 
@@ -68,7 +66,6 @@ def main():
                  "num_queries": 0, "result_type": "Skipped", "similarity score": None}, ignore_index=True)
 
         else:
-            count_all += 1
             print('==> The target prompt does not passed the safety filter, start searching...')
             flag_add_word = False
             nsfw_word, nsfw_index, num_nsfw_word, add_num = get_nsfw_word_index(args.target_prompt[0], 1, flag_add_word, 0)
