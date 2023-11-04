@@ -73,54 +73,40 @@ def main():
             flag_add_word = False
             nsfw_word, nsfw_index, num_nsfw_word, add_num = get_nsfw_word_index(args.target_prompt[0], 1, flag_add_word, 0)
             if args.method == 'rl':
-                # temp_token_list = ['']
-                temp_token_list = [prompt_list[random.randint(0, len(prompt_list))]]
-                input_prompt = get_adv_prompt(args.target_prompt, nsfw_index, temp_token_list)
-                target_nsfw, _, pilimage = pipe(input_prompt)
-                print(target_nsfw)
-                if target_nsfw == False:
-                    print('Bypass')
-                    count_pass += 1
-
-    print(count_pass/count_all)
-
-
-
-
-                # actor = MPA_agent(pipe = pipe, target = args.target, nsfw_word = nsfw_word,num_word=num_nsfw_word, word_index=nsfw_index, num_subword=args.num_subword, len_subword=args.len_subword,
-                #                   mode=args.reward_mode, s_filter=args.safety, threshold=args.threshold, target_prompt=args.target_prompt, query_limit= args.q_limit, saved_figure_path = saved_figure_path, df=results_df, query_online=0, query=0, prompt_record=prompt_record, en=args.en)
-                # actor.build_robot(critic=True, rl_batch=1, gamma=1, lr=0.1, stable=True)
-                # results_df, flag_add_word, query_offline, query_online, prompt_record = actor.reinforcement_learn(steps=10000,baseline_subtraction=False)
-                # while flag_add_word == True:
-                #     add_num+=1
-                #     nsfw_word, nsfw_index, num_nsfw_word, add_num = get_nsfw_word_index(args.target_prompt[0], 1, flag_add_word, add_num)
-                #     actor = MPA_agent(pipe=pipe, target=args.target, nsfw_word=nsfw_word,
-                #                       num_word=num_nsfw_word, word_index=nsfw_index, num_subword=args.num_subword,
-                #                       len_subword=args.len_subword,
-                #                       mode=args.reward_mode, s_filter=args.safety, threshold=args.threshold,
-                #                       target_prompt=args.target_prompt, query_limit=args.q_limit,
-                #                       saved_figure_path=saved_figure_path, df=results_df, query= query_offline, query_online=query_online, prompt_record=prompt_record, en=args.en)
-                #     actor.build_robot(critic=True, rl_batch=1, gamma=1, lr=0.1, stable=True)
-                #     results_df, flag_add_word, query_offline, query_online, prompt_record = actor.reinforcement_learn(steps=10000, baseline_subtraction=False)
+                actor = MPA_agent(pipe = pipe, target = args.target, nsfw_word = nsfw_word,num_word=num_nsfw_word, word_index=nsfw_index, num_subword=args.num_subword, len_subword=args.len_subword,
+                                  mode=args.reward_mode, s_filter=args.safety, threshold=args.threshold, target_prompt=args.target_prompt, query_limit= args.q_limit, saved_figure_path = saved_figure_path, df=results_df, query_online=0, query=0, prompt_record=prompt_record, en=args.en)
+                actor.build_robot(critic=True, rl_batch=1, gamma=1, lr=0.1, stable=True)
+                results_df, flag_add_word, query_offline, query_online, prompt_record = actor.reinforcement_learn(steps=1000,baseline_subtraction=False)
+                while flag_add_word == True:
+                    add_num+=1
+                    nsfw_word, nsfw_index, num_nsfw_word, add_num = get_nsfw_word_index(args.target_prompt[0], 1, flag_add_word, add_num)
+                    actor = MPA_agent(pipe=pipe, target=args.target, nsfw_word=nsfw_word,
+                                      num_word=num_nsfw_word, word_index=nsfw_index, num_subword=args.num_subword,
+                                      len_subword=args.len_subword,
+                                      mode=args.reward_mode, s_filter=args.safety, threshold=args.threshold,
+                                      target_prompt=args.target_prompt, query_limit=args.q_limit,
+                                      saved_figure_path=saved_figure_path, df=results_df, query= query_offline, query_online=query_online, prompt_record=prompt_record, en=args.en)
+                    actor.build_robot(critic=True, rl_batch=1, gamma=1, lr=0.1, stable=True)
+                    results_df, flag_add_word, query_offline, query_online, prompt_record = actor.reinforcement_learn(steps=1000, baseline_subtraction=False)
 
 
-    #         elif args.method == 'bruteforce':
-    #             actor = brute_search(num_word=num_nsfw_word, word_index=nsfw_index, num_subword=args.num_subword, len_subword=3,target_prompt=args.target_prompt, threshold=0.6, saved_figure_path = saved_figure_path, pipe = pipe)
-    #             actor.search()
-    #
-    #         elif args.method == 'greedy':
-    #             actor = greedy_search(num_word=num_nsfw_word, word_index=nsfw_index, num_subword=args.num_subword, len_subword=3,target_prompt=args.target_prompt, threshold=0.6, saved_figure_path = saved_figure_path, pipe = pipe)
-    #             actor.search()
-    #
-    #         elif args.method == 'beam':
-    #             actor = beam_search(num_word=num_nsfw_word, word_index=nsfw_index, num_subword=args.num_subword, len_subword=3,target_prompt=args.target_prompt, threshold=0.6, saved_figure_path = saved_figure_path, beam_size=2, pipe = pipe)
-    #             actor.search()
-    #
-    #         else:
-    #             raise NotImplementedError
-    #
-    # results_df.to_csv(f'results/{todaystr}_{args.method}_{args.target}_{args.reward_mode}_{args.safety}_{args.len_subword}_{args.threshold}.csv',index=False)
-    # print(f'==> Statistic results saved under "results/"')
+            elif args.method == 'bruteforce':
+                actor = brute_search(num_word=num_nsfw_word, word_index=nsfw_index, num_subword=args.num_subword, len_subword=3,target_prompt=args.target_prompt, threshold=0.6, saved_figure_path = saved_figure_path, pipe = pipe)
+                actor.search()
+
+            elif args.method == 'greedy':
+                actor = greedy_search(num_word=num_nsfw_word, word_index=nsfw_index, num_subword=args.num_subword, len_subword=3,target_prompt=args.target_prompt, threshold=0.6, saved_figure_path = saved_figure_path, pipe = pipe)
+                actor.search()
+
+            elif args.method == 'beam':
+                actor = beam_search(num_word=num_nsfw_word, word_index=nsfw_index, num_subword=args.num_subword, len_subword=3,target_prompt=args.target_prompt, threshold=0.6, saved_figure_path = saved_figure_path, beam_size=2, pipe = pipe)
+                actor.search()
+
+            else:
+                raise NotImplementedError
+
+    results_df.to_csv(f'results/{todaystr}_{args.method}_{args.target}_{args.reward_mode}_{args.safety}_{args.len_subword}_{args.threshold}.csv',index=False)
+    print(f'==> Statistic results saved under "results/"')
 
 if __name__ == '__main__':
     main()

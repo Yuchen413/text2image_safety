@@ -100,7 +100,6 @@ class robot():
             return action.unsqueeze(-1), log_p_action.unsqueeze(-1), value
         else:
             p_a = F.softmax(self.mind(state), dim=1)
-
             # select action with prob
             dist = Categorical(probs=p_a)
             action = dist.sample()
@@ -269,6 +268,8 @@ class MPA_agent(robot):
         R = 0
         updated_rewards = torch.zeros(rewards.size()).to(torch_device)
         for i in range(rewards.size(-1)):
+            print(rewards.size)
+            print(rewards)
             R = rewards[:, -(i + 1)] + gamma * R
             updated_rewards[:, -(i + 1)] = R
         return updated_rewards
