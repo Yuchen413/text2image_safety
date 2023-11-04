@@ -73,7 +73,7 @@ def main():
                 actor = MPA_agent(pipe = pipe, target = args.target, nsfw_word = nsfw_word,num_word=num_nsfw_word, word_index=nsfw_index, num_subword=args.num_subword, len_subword=args.len_subword,
                                   mode=args.reward_mode, s_filter=args.safety, threshold=args.threshold, target_prompt=args.target_prompt, query_limit= args.q_limit, saved_figure_path = saved_figure_path, df=results_df, query_online=0, query=0, prompt_record=prompt_record, en=args.en)
                 actor.build_robot(critic=True, rl_batch=1, gamma=1, lr=0.1, stable=True)
-                results_df, flag_add_word, query_offline, query_online, prompt_record = actor.reinforcement_learn(steps=1000,baseline_subtraction=False)
+                results_df, flag_add_word, query_offline, query_online, prompt_record = actor.reinforcement_learn(steps=50,baseline_subtraction=False)
                 while flag_add_word == True:
                     add_num+=1
                     nsfw_word, nsfw_index, num_nsfw_word, add_num = get_nsfw_word_index(args.target_prompt[0], 1, flag_add_word, add_num)
@@ -84,7 +84,7 @@ def main():
                                       target_prompt=args.target_prompt, query_limit=args.q_limit,
                                       saved_figure_path=saved_figure_path, df=results_df, query= query_offline, query_online=query_online, prompt_record=prompt_record, en=args.en)
                     actor.build_robot(critic=True, rl_batch=1, gamma=1, lr=0.1, stable=True)
-                    results_df, flag_add_word, query_offline, query_online, prompt_record = actor.reinforcement_learn(steps=1000, baseline_subtraction=False)
+                    results_df, flag_add_word, query_offline, query_online, prompt_record = actor.reinforcement_learn(steps=50, baseline_subtraction=False)
 
 
             elif args.method == 'bruteforce':
