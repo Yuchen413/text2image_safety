@@ -1,6 +1,6 @@
-# SneakyPrompt : Evaluating Robustness of Text-to-image Generative Models' Safety Filters
+# SneakyPrompt: Jailbreaking Text-to-image Generative Models
 
-This if the official implementation for paper: [SneakyPrompt : Evaluating Robustness of Text-to-image Generative Models' Safety Filters](https://arxiv.org/abs/2305.12082)
+This if the official implementation for paper: [SneakyPrompt: Jailbreaking Text-to-image Generative Models](https://arxiv.org/abs/2305.12082)
 
 ## Search adversarial prompt:
 
@@ -18,9 +18,9 @@ Please cite our paper if you find this repo useful.
 
 ```
 @misc{yang2023sneakyprompt,
-      title={SneakyPrompt: Evaluating Robustness of Text-to-image Generative Models' Safety Filters},
+      title={SneakyPrompt: Jailbreaking Text-to-image Generative Models},
       author={Yuchen Yang and Bo Hui and Haolin Yuan and Neil Gong and Yinzhi Cao},
-      year={2023},
-      archivePrefix={arXiv}
+      year={2024},
+      booktitle={Proceedings of the IEEE Symposium on Security and Privacy (S&P)}
 }
 ```
