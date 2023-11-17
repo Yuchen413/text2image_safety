@@ -17,10 +17,10 @@ You can change the parameters follow the choices in 'search.py'. The adversarial
 Please cite our paper if you find this repo useful.
 
 ```
-@misc{yang2023sneakyprompt,
+@inproceedings{yang2023sneakyprompt,
       title={SneakyPrompt: Jailbreaking Text-to-image Generative Models},
-      author={Yuchen Yang, Bo Hui, Haolin Yuan, Neil Gong, Yinzhi Cao},
+      author={Yuchen Yang and Bo Hui and Haolin Yuan and Neil Gong and Yinzhi Cao},
       year={2024},
-      booktitle={Proceedings of the IEEE Symposium on Security and Privacy (S&P)}
+      booktitle={Proceedings of the IEEE Symposium on Security and Privacy (Oakland)}
 }
 ```
