@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fdcc28cc-53e3-4489-9b94-0005cc60d740" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2E057cWVZh8oMVj895PRApf0cc8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;credentialsType com.jetbrains.python.remote.PyCreateRemoteInterpreterDialog$PyCreateRemoteSdkForm&quot;: &quot;Web Deployment&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yuchen/PycharmProjects/Text2Img/model&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/model" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/results" />
+      <recent name="$PROJECT_DIR$/figure/dalle" />
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/baseline" />
+      <recent name="$PROJECT_DIR$/paper_figure/nsfw" />
+      <recent name="$PROJECT_DIR$/paper_figure/rl_sd_l2_t_match_3_0.6" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="evaluate" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Text2Img" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="figure_test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Text2Img" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/figure_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Text2Img" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Text2Img" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://yuchen@10.161.159.74:22/home/yuchen/miniconda3/envs/textattack/bin/python3.9" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="text2image_pipeline" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Text2Img" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/text2image_pipeline.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.evaluate" />
+      <item itemvalue="Python.text2image_pipeline" />
+      <item itemvalue="Python.figure_test" />
+      <item itemvalue="Python.test" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fdcc28cc-53e3-4489-9b94-0005cc60d740" name="Changes" comment="" />
+      <created>1661719495054</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661719495054</updated>
+      <workItem from="1661719497117" duration="5238000" />
+      <workItem from="1662653712887" duration="21467000" />
+      <workItem from="1663681674493" duration="1072000" />
+      <workItem from="1663691136834" duration="239000" />
+      <workItem from="1664492002521" duration="11128000" />
+      <workItem from="1664761090516" duration="15000" />
+      <workItem from="1665588557062" duration="10347000" />
+      <workItem from="1665682781197" duration="25376000" />
+      <workItem from="1666202228446" duration="4383000" />
+      <workItem from="1666211375847" duration="1845000" />
+      <workItem from="1666213231858" duration="27559000" />
+      <workItem from="1666288636634" duration="18319000" />
+      <workItem from="1666643017983" duration="10075000" />
+      <workItem from="1666737487734" duration="11116000" />
+      <workItem from="1666926305537" duration="73000" />
+      <workItem from="1666928506260" duration="1046000" />
+      <workItem from="1666957397724" duration="1000" />
+      <workItem from="1667244390753" duration="39690000" />
+      <workItem from="1668108751862" duration="86168000" />
+      <workItem from="1669771470073" duration="67974000" />
+      <workItem from="1671048112856" duration="20280000" />
+      <workItem from="1672710032538" duration="147830000" />
+      <workItem from="1675107091518" duration="64758000" />
+      <workItem from="1675965245580" duration="35388000" />
+      <workItem from="1676652055835" duration="34480000" />
+      <workItem from="1677175311938" duration="3129000" />
+      <workItem from="1677263560417" duration="8549000" />
+      <workItem from="1677441768845" duration="4363000" />
+      <workItem from="1677457908040" duration="634000" />
+      <workItem from="1677613885106" duration="24096000" />
+      <workItem from="1677776201018" duration="19980000" />
+      <workItem from="1677808417021" duration="128416000" />
+      <workItem from="1678754568901" duration="831000" />
+      <workItem from="1678976114311" duration="46707000" />
+      <workItem from="1679535367797" duration="7986000" />
+      <workItem from="1679944421847" duration="27312000" />
+      <workItem from="1680812223508" duration="1866000" />
+      <workItem from="1681158618449" duration="35749000" />
+      <workItem from="1681338789127" duration="42753000" />
+      <workItem from="1681737257128" duration="183316000" />
+      <workItem from="1682454036910" duration="171019000" />
+      <workItem from="1683835603251" duration="872000" />
+      <workItem from="1685758856360" duration="1236000" />
+      <workItem from="1686493523573" duration="25000" />
+      <workItem from="1686510404988" duration="1010000" />
+      <workItem from="1686841756807" duration="2566000" />
+      <workItem from="1689180580616" duration="61542000" />
+      <workItem from="1689937487056" duration="170000" />
+      <workItem from="1689944771157" duration="21154000" />
+      <workItem from="1690140060793" duration="15657000" />
+      <workItem from="1690224211293" duration="6059000" />
+      <workItem from="1690556901399" duration="9907000" />
+      <workItem from="1691091565602" duration="88000" />
+      <workItem from="1692050299330" duration="47000" />
+      <workItem from="1694758194159" duration="118000" />
+      <workItem from="1695388688733" duration="645000" />
+      <workItem from="1695802553145" duration="3000" />
+      <workItem from="1695802619316" duration="9069000" />
+      <workItem from="1695817361281" duration="674000" />
+      <workItem from="1695891834995" duration="28000" />
+      <workItem from="1695891911204" duration="28000" />
+      <workItem from="1696865679530" duration="6000" />
+      <workItem from="1696865816123" duration="677000" />
+      <workItem from="1696974054791" duration="4447000" />
+      <workItem from="1697324345637" duration="56000" />
+      <workItem from="1697489046186" duration="30000" />
+      <workItem from="1697924471861" duration="773000" />
+      <workItem from="1697925539370" duration="472000" />
+      <workItem from="1699017601482" duration="5165000" />
+      <workItem from="1699027876064" duration="16818000" />
+      <workItem from="1699106581943" duration="7256000" />
+      <workItem from="1699643786815" duration="810000" />
+      <workItem from="1699931479708" duration="1358000" />
+      <workItem from="1700190965147" duration="32000" />
+      <workItem from="1700768289624" duration="922000" />
+      <workItem from="1700861530320" duration="197000" />
+      <workItem from="1701027551005" duration="728000" />
+      <workItem from="1701028283590" duration="2018000" />
+    </task>
+    <task id="LOCAL-00040" summary="update">
+      <created>1681961054834</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1681961054834</updated>
+    </task>
+    <task id="LOCAL-00041" summary="add: if does not bypass the safety filter for three times, add one more word to be replaced.">
+      <created>1682464786165</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1682464786165</updated>
+    </task>
+    <task id="LOCAL-00042" summary="calculate fid">
+      <created>1682464813984</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1682464813984</updated>
+    </task>
+    <task id="LOCAL-00043" summary="update record best prompt">
+      <created>1682476969754</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1682476969754</updated>
+    </task>
+    <task id="LOCAL-00044" summary="update">
+      <created>1682476997647</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1682476997647</updated>
+    </task>
+    <task id="LOCAL-00045" summary="update">
+      <created>1682477228693</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1682477228693</updated>
+    </task>
+    <task id="LOCAL-00046" summary="fix a bug when save results">
+      <created>1682539596702</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1682539596702</updated>
+    </task>
+    <task id="LOCAL-00047" summary="fix a bug in get nsfw word index.">
+      <created>1682548572133</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1682548572133</updated>
+    </task>
+    <task id="LOCAL-00048" summary="scale penalty with 0.1">
+      <created>1682548610318</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1682548610318</updated>
+    </task>
+    <task id="LOCAL-00049" summary="shrink some too long prompt">
+      <created>1682548686596</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1682548686596</updated>
+    </task>
+    <task id="LOCAL-00050" summary="update">
+      <created>1682550556252</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1682550556253</updated>
+    </task>
+    <task id="LOCAL-00051" summary="fix bug in nsfw_match">
+      <created>1682551693959</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1682551693959</updated>
+    </task>
+    <task id="LOCAL-00052" summary="download vocabulary to local">
+      <created>1682611774843</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1682611774843</updated>
+    </task>
+    <task id="LOCAL-00053" summary="update fix seed">
+      <created>1682617706458</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1682617706458</updated>
+    </task>
+    <task id="LOCAL-00054" summary="fix a bug on i_image check">
+      <created>1682621084025</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1682621084025</updated>
+    </task>
+    <task id="LOCAL-00055" summary="external file for paper">
+      <created>1682637458087</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1682637458087</updated>
+    </task>
+    <task id="LOCAL-00056" summary="update">
+      <created>1682640129775</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1682640129775</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Add perturb rate for early stop, defaut as 0.3">
+      <created>1682693721633</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1682693721634</updated>
+    </task>
+    <task id="LOCAL-00058" summary="evaluate">
+      <created>1682954177593</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1682954177593</updated>
+    </task>
+    <task id="LOCAL-00059" summary="update evaluate">
+      <created>1682954211739</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1682954211740</updated>
+    </task>
+    <task id="LOCAL-00060" summary="update">
+      <created>1683079017450</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1683079017450</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Organize the code">
+      <created>1683235341684</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1683235341684</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Organize the code and update Readme">
+      <created>1683236611701</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1683236611701</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Delete auth">
+      <created>1689539620065</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1689539620066</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Add english word only">
+      <created>1690041021873</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1690041021873</updated>
+    </task>
+    <task id="LOCAL-00065" summary="update readme">
+      <created>1690050861480</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1690050861480</updated>
+    </task>
+    <task id="LOCAL-00066" summary="update readme">
+      <created>1690050985800</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1690050985800</updated>
+    </task>
+    <task id="LOCAL-00067" summary="update readme">
+      <created>1690051172008</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1690051172008</updated>
+    </task>
+    <task id="LOCAL-00068" summary="update external figure">
+      <created>1690216308982</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1690216308982</updated>
+    </task>
+    <task id="LOCAL-00069" summary="update readme">
+      <created>1690216606478</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1690216606478</updated>
+    </task>
+    <task id="LOCAL-00070" summary="update readme">
+      <created>1690397211599</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1690397211599</updated>
+    </task>
+    <task id="LOCAL-00071" summary="update readme">
+      <created>1690397339531</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1690397339531</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Add image2prompt dataset">
+      <created>1697924572365</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1697924572365</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Delete public disturbing content">
+      <created>1699028791960</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1699028791960</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Delete public disturbing content">
+      <created>1699029500060</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1699029500060</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Add models">
+      <created>1699031798055</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1699031798055</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Add models">
+      <created>1699031921002</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1699031921002</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Add models">
+      <created>1699032009099</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1699032009099</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Add models">
+      <created>1699032225983</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1699032225983</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Fix">
+      <created>1699061829965</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1699061829965</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Fix">
+      <created>1699061860204</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1699061860204</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Fix">
+      <created>1699063575926</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1699063575927</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Update ReadMe">
+      <created>1699644058341</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1699644058341</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Update ReadMe">
+      <created>1699644098036</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1699644098036</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Update ReadMe">
+      <created>1700190986424</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1700190986424</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Update ReadMe">
+      <created>1700768593201</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1700768593201</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Update env config">
+      <created>1701028095115</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1701028095116</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Update readme for env and dataset">
+      <created>1701049177096</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1701049177096</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Update readme for env and dataset">
+      <created>1701049403039</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1701049403039</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="fix a bug in get nsfw word index." />
+    <MESSAGE value="scale penalty with 0.1" />
+    <MESSAGE value="shrink some too long prompt" />
+    <MESSAGE value="fix bug in nsfw_match" />
+    <MESSAGE value="download vocabulary to local" />
+    <MESSAGE value="update fix seed" />
+    <MESSAGE value="fix a bug on i_image check" />
+    <MESSAGE value="external file for paper" />
+    <MESSAGE value="Add perturb rate for early stop, defaut as 0.3" />
+    <MESSAGE value="evaluate" />
+    <MESSAGE value="update evaluate" />
+    <MESSAGE value="update" />
+    <MESSAGE value="Organize the code" />
+    <MESSAGE value="Organize the code and update Readme" />
+    <MESSAGE value="Delete auth" />
+    <MESSAGE value="Add english word only" />
+    <MESSAGE value="update external figure" />
+    <MESSAGE value="update readme" />
+    <MESSAGE value="Add image2prompt dataset" />
+    <MESSAGE value="Delete public disturbing content" />
+    <MESSAGE value="Add models" />
+    <MESSAGE value="Fix" />
+    <MESSAGE value="Update ReadMe" />
+    <MESSAGE value="Update env config" />
+    <MESSAGE value="Update readme for env and dataset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update readme for env and dataset" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/stable_diffusion$test.coverage" NAME="test Coverage Results" MODIFIED="1699044305569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stable_diffusion$testNsfwData.coverage" NAME="testNsfwData Coverage Results" MODIFIED="1681328679130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Text2Img$rl_demo.coverage" NAME="rl_demo Coverage Results" MODIFIED="1677797313278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../text-image/LDM_demo/rl-demo" />
+    <SUITE FILE_PATH="coverage/Text2Img$get_clip_score.coverage" NAME="get_clip_score Coverage Results" MODIFIED="1671196831214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../text-image/LDM_demo" />
+    <SUITE FILE_PATH="coverage/stable_diffusion$SafetyCheckerWrapper.coverage" NAME="SafetyCheckerWrapper Coverage Results" MODIFIED="1681339901877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Text2Img$gb_demo.coverage" NAME="gb_demo Coverage Results" MODIFIED="1668170622237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../text-image/LDM_demo" />
+    <SUITE FILE_PATH="coverage/Text2Img$main.coverage" NAME="main Coverage Results" MODIFIED="1677808399798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Text2Img$stable_diffusion_utils.coverage" NAME="stable_diffusion_utils Coverage Results" MODIFIED="1677777724179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../text-image/LDM_demo/rl" />
+    <SUITE FILE_PATH="coverage/Text2Img$FGSM.coverage" NAME="FGSM Coverage Results" MODIFIED="1668124318806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../text-image/LDM_demo" />
+    <SUITE FILE_PATH="coverage/Text2Img$rl_search.coverage" NAME="rl_search Coverage Results" MODIFIED="1677802834115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../text-image/LDM_demo/rl" />
+    <SUITE FILE_PATH="coverage/Text2Img$opt_latents.coverage" NAME="opt_latents Coverage Results" MODIFIED="1668548415605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../text-image/LDM_demo" />
+    <SUITE FILE_PATH="coverage/stable_diffusion$figure_test.coverage" NAME="figure_test Coverage Results" MODIFIED="1699022441653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stable_diffusion$safety_filter.coverage" NAME="safety_filter Coverage Results" MODIFIED="1679004078734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stable_diffusion$text2image_pipeline.coverage" NAME="text2image_pipeline Coverage Results" MODIFIED="1683136387730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stable_diffusion$data_loader.coverage" NAME="evaluate Coverage Results" MODIFIED="1678410888169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stable_diffusion$evaluate.coverage" NAME="evaluate Coverage Results" MODIFIED="1695811516309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stable_diffusion$main.coverage" NAME="main Coverage Results" MODIFIED="1699110618357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stable_diffusion$evaluate_result.coverage" NAME="evaluate_result Coverage Results" MODIFIED="1683235165670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Text2Img$brute_force.coverage" NAME="test Coverage Results" MODIFIED="1674821479731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../text-image/CLIP-based-NSFW-Detector" />
+    <SUITE FILE_PATH="coverage/Text2Img$test_imageonly.coverage" NAME="test-imageonly Coverage Results" MODIFIED="1674784866142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../text-image/NSFW-Detection-DL" />
+    <SUITE FILE_PATH="coverage/Text2Img$image2embedding.coverage" NAME="opt_latents Coverage Results" MODIFIED="1667559352155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../text-image/LDM_demo" />
+    <SUITE FILE_PATH="coverage/Text2Img$safety_filter.coverage" NAME="safety_filter Coverage Results" MODIFIED="1677701846182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../text-image/LDM_demo/rl" />
+    <SUITE FILE_PATH="coverage/Text2Img$nsfw_clip.coverage" NAME="nsfw-clip Coverage Results" MODIFIED="1674783368320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../text-image/CLIP-based-NSFW-Detector" />
+    <SUITE FILE_PATH="coverage/Text2Img$test_rl.coverage" NAME="test-rl Coverage Results" MODIFIED="1675284648774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../text-image/LDM_demo/rl-demo" />
+    <SUITE FILE_PATH="coverage/Text2Img$LDM_demo.coverage" NAME="image2embedding Coverage Results" MODIFIED="1666273450536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../text-image/LDM_demo" />
+    <SUITE FILE_PATH="coverage/Text2Img$test_nsfwclip.coverage" NAME="test-nsfwclip Coverage Results" MODIFIED="1675383543086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../text-image/CLIP-based-NSFW-Detector" />
+  </component>
+</project>
