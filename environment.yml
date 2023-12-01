@@ -307,9 +307,9 @@ dependencies:
       - importlib-metadata==5.0.0
       - iopath==0.1.10
       - janome==0.4.2
-      - jax==0.2.28
-      - jaxlib==0.1.76
-      - jaxtyping==0.2.20
+#      - jax==0.2.28
+#      - jaxlib==0.1.76
+#      - jaxtyping==0.2.20
       - jieba==0.42.1
       - jmespath==1.0.1
       - joblib==1.2.0
