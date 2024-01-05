@@ -412,8 +412,8 @@ dependencies:
       - termcolor==2.0.1
       - terminaltables==3.1.10
       - textattack==0.3.8
-      - tf-estimator-nightly==2.11.0.dev2022100908
-      - tf-nightly==2.11.0.dev20221009
+#      - tf-estimator-nightly==2.11.0.dev2022100908
+#      - tf-nightly==2.11.0.dev20221009
       - threadpoolctl==3.1.0
       - tifffile==2023.4.12
       - timm==0.9.8
