@@ -1,3 +1,9 @@
+'''
+Animal Model Follows:
+https://github.com/Aggarwal-Abhishek/BasicCNN_Pytorch
+Weights can be downloaded from the above link and change the name to 'animal_model_50.pth' and 'animal_model_100.pth'
+'''
+
 import torch
 import torch.nn as nn
 
