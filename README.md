@@ -15,7 +15,9 @@ For testing only the SneakyPrompt (without testing the baselines) with minimum r
 
 ``conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=12.1 -c pytorch -c nvidia``
 
-``pip install transformers==4.27.4 accelerate==0.18.0 sentencepiece==0.1.97 einops==0.7.0 triton==2.1.0 diffusers==0.29.2 numpy==1.26.0 xformers==0.0.22.post7 tensorflow==2.8.3 pandas pillow scikit-learn protobuf clip torchmetrics matplotlib``
+``pip install transformers==4.27.4 accelerate==0.18.0 sentencepiece==0.1.97 einops==0.7.0 triton==2.1.0 diffusers==0.29.2 numpy==1.26.0 xformers==0.0.22.post7 tensorflow==2.8.3 pandas pillow scikit-learn protobuf torchmetrics matplotlib``
+
+``pip install git+https://github.com/openai/CLIP.git``
 
 
 ## Dataset
@@ -33,7 +35,9 @@ Note: This dataset may contain explicit content, and user discretion is advised 
 
 ``python main.py --target='sd' --method='rl' --reward_mode='clip' --threshold=0.26 --len_subword=10 --q_limit=60 --safety='ti_sd'``
 
-You can change the parameters follow the choices in 'search.py'. The adversarial prompts and statistic results (xx.csv) will be saved under '/results', and the generated images will be saved under '/figure'
+- You can change the parameters follow the choices in ``main.py``. The adversarial prompts and statistic results (xx.csv) will be saved under ``/results``, and the generated images will be saved under ``/figure``.
+- e.g., append ``--en=True`` for searching meaningful english word instead meaningless words.
+
 
 ## Evaluate the result:
 
