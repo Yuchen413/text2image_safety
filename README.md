@@ -11,6 +11,12 @@ The experiment is run on Ubuntu 18.04, with one Nvidia 3090 GPU (24G). Please in
 
 ``conda env create -f environment.yml``
 
+For testing only the SneakyPrompt (without testing the baselines) with minimum requirements, please run the following command instead of the above:
+
+``conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=12.1 -c pytorch -c nvidia``
+
+``pip install transformers==4.27.4 accelerate==0.18.0 sentencepiece==0.1.97 einops==0.7.0 triton==2.1.0 diffusers==0.29.2 numpy==1.26.0 xformers==0.0.22.post7 tensorflow==2.8.3 pandas pillow scikit-learn protobuf clip torchmetrics matplotlib``
+
 
 ## Dataset
 
