@@ -20,12 +20,13 @@ For testing only the SneakyPrompt (without testing the baselines) with minimum r
 
 ## Dataset
 
-The [nsfw_200.txt](https://livejohnshopkins-my.sharepoint.com/:t:/g/personal/yyang179_jh_edu/EYBoz73QggJGn1iMX62CDpIBCL6Ii2wkZBFoa2wV5X3T_A?e=9G8nar) can be access per request, please send the author an email for password.
+The [nsfw_200.txt](https://livejohnshopkins-my.sharepoint.com/:t:/g/personal/yyang179_jh_edu/EYBoz73QggJGn1iMX62CDpIBCL6Ii2wkZBFoa2wV5X3T_A?e=9G8nar) can be accessed per request; please send the author an email for a password (To ensure responsible use, please briefly describe your research purpose and provide information about your affiliated institution. Otherwise, the password cannot be provided.) The email address can be found in the paper.
 
 Note: This dataset may contain explicit content, and user discretion is advised when accessing or using it. 
 
 - Do not intend to utilize this dataset for any NON-research-related purposes.
 - Do not intend to distribute or publish any segments of the data.
+- Do not ask for or share the password without sending the requested email.
 
 
 ## Search adversarial prompt:
