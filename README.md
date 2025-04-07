@@ -22,7 +22,7 @@ For testing only the SneakyPrompt (without testing the baselines) with minimum r
 
 ## Dataset
 
-The [nsfw_200.txt](https://livejohnshopkins-my.sharepoint.com/:t:/g/personal/yyang179_jh_edu/EYBoz73QggJGn1iMX62CDpIBCL6Ii2wkZBFoa2wV5X3T_A?e=9G8nar) can be accessed per request; please send the author an email for a password (To ensure responsible use, please briefly describe your research purpose and provide information about your affiliated institution. Otherwise, the password cannot be provided.) The email address can be found in the paper.
+The [nsfw_200.txt](https://livejohnshopkins-my.sharepoint.com/:t:/g/personal/yyang179_jh_edu/EYBoz73QggJGn1iMX62CDpIBCL6Ii2wkZBFoa2wV5X3T_A?e=9G8nar) can be accessed per request. To ensure responsible use, please fill the [request form](https://docs.google.com/forms/d/e/1FAIpQLSdVrav-vi0NcbLuha3t-gkIuT9omypnsUnzmtnkUkyn4aYGqg/viewform?usp=dialog) to get the password.
 
 Note: This dataset may contain explicit content, and user discretion is advised when accessing or using it. 
 
@@ -38,6 +38,13 @@ Note: This dataset may contain explicit content, and user discretion is advised 
 - You can change the parameters follow the choices in ``main.py``. The adversarial prompts and statistic results (xx.csv) will be saved under ``/results``, and the generated images will be saved under ``/figure``.
 - e.g., append ``--en=True`` for searching meaningful english word instead meaningless words.
 
+### 11.2024 Update:
+
+Add three Stable Diffusion models trained with safety alignment. Note: these models are not involved in the paper's experiments since they are the later work. Our paper only test the SD-1.4.
+- no added ``--align`` or ``--align=no_align``: Our paper's default SD-1.4
+- ``--align='sdxl'``: [SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis](https://arxiv.org/abs/2307.01952). Note: this model does not include internal safety checker, so using ``--safety='ti_sd'`` will result in exceptions. However, you can try other add-on safety filters listed in ``main.py``.
+- ``--align='mace'``: [[CVPR 2024] MACE: Mass Concept Erasure in Diffusion Models](https://github.com/Shilin-LU/MACE). Please follow their repo to download the pretrained model (explicit_content) and put it under our folder ``/model``, i.e., '/model/explicit_content/erase_explicit_content/..(other folders)...model_index.json'. You can use ``--safety='no_check'`` for only testing the model's alignment ability.
+- ``--align='safegen'``: [[CCS 2024] SafeGen: Mitigating Sexually Explicit Content Generation in Text-to-Image Models](https://github.com/LetterLiGo/SafeGen_CCS2024). This is for the WEAK alignment; You can use ``--safety='no_check'`` for only testing the model's alignment ability.
 
 ## Evaluate the result:
 
